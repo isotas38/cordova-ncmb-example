@@ -108,6 +108,17 @@ function readBinaryFile(fileEntry) {
                 .catch(function (err) {
                     // エラー処理
                 });
+            // var data = new FormData();
+            // data.append("upName", fileData, "test.pdf");
+            // var xhr = new XMLHttpRequest();
+            // xhr.withCredentials = true;
+            // xhr.addEventListener("readystatechange", function () {
+            //     if (this.readyState === 4) {
+            //         console.log(this.responseText);
+            //     }
+            // });
+            // xhr.open("POST", "http://192.168.11.3:3000/upload");
+            // xhr.send(data);
         };
         reader.readAsArrayBuffer(file);
     }, function (err) {
